@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
 
@@ -17,7 +18,10 @@
     position: fixed;
 
 }
-
+.search{
+    float: right;
+    display: inline-block;
+}
 .navbar a {
     text-decoration: none;
     font-size: 10 px;
@@ -103,18 +107,25 @@
 .img-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 500px;
     width: 85%;
     margin: 0 auto;
     margin-top: 190px;
-
+    justify-content: center;
 }
 
 .box {
     width: 250px;
     text-align: center;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    
 }
-
+.box img{
+    width: 160px;
+    height: 160px;
+    border-radius: 5px;
+}
 .tourDates {
     width: 100%;
     background-color: black;
@@ -177,6 +188,9 @@
     border-radius: 50%;
     margin-right: 10px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .countries {
@@ -260,95 +274,67 @@ p {
     border: 1px solid black;
 }
 
-.contact-container {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.contact {
-    text-align: center;
-    margin: 35px 0;
-}
-
-.contact i {
-    opacity: 0.5;
-}
-
-.special-cont {
-    letter-spacing: 2px;
-    font-size: 32px;
-}
-
-.adress {
+.containerr{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
 }
-
-.adress i {
-    margin: 10px;
-    font-size: 15px;
+.cnt{
+    font-size: 32px;
+    padding-top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-.adress span {
-    margin-left: 10px;
-    letter-spacing: 2px;
+.note{
+    color: #999999;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 15px;
 }
-.form{
-    display: flex;
-}
-.forms {
-    display: block;
-
-}
-
-.send {
-    color: white;
-    background-color: #000000;
-    width: 55px;
-    height: 35px;
-    padding: 5px;
-    margin-left: 15px;
-    cursor: pointer;
-}
-
-.send :hover {
-    color: gray;
-    background-color: #fff;
-    border: 1px solid black;
-}
-
-.forms img {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
+.two{
+    padding-top: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-
-.forms {
-    display: flex;
-    width: 50%;
-    box-sizing: border-box;
+.twoo{
+    margin-left: 230px;
+    margin-right: 400px;
 }
-
-.send {
-    color: white;
-    background-color: #000000;
-    width: 60px;
-    height: 35px;
-    padding: 5px;
-    margin-left: 10px;
-    cursor: pointer;
+.twoo p{
     font-size: 20px;
-   
+    font-family: Arial, Helvetica, sans-serif;
 }
-.enm{
-    color: grey;
-    
+.back{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
-.abc{
-    margin-top: 30px;
+.borderr {
+    border-color: #999999;
+    height: 30px;
 }
-.msg{
-    color: grey;
+.msggs{
+    border-color: #999999;
+    height: 30px;
+width: 332px;
+}
+.msgs{
+    padding-top: 10px;
+}
+.sndbtn{
+padding-top: 17px;
+}
+.sndbtn button{
+background-color: black;
+color: white;
+width: 70px;
+height: 40px;
+transition: 0.3s ease;
+}
+.sndbtn button:hover{
+    color: black;
+    background-color: silver;
+    border: none;
 }
